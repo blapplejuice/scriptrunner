@@ -1,4 +1,5 @@
 import tkinter as tk;
+import libs as scriptrunner;
 
 # put a 1 in the bool() to auto fill in password
 autopassword = bool();
@@ -12,14 +13,17 @@ root.title("unlocker");
 frame = tk.Frame(root);
 frame.pack();
 
-def validate(event):
+def validate():
     password = "hackerman";
     inputpassword = passbox.get();
     if(inputpassword == password):
-        import two;
         root.destroy();
+        scriptrunner.tk();
+
+def valid(event):
+    validate();
     
-root.bind('<Return>', validate)
+root.bind('<Return>', valid)
 
 disclaimertxt = "password";
 if(autopassword):
@@ -32,7 +36,7 @@ disclaimer.pack(side=tk.TOP);
 
 passbox = tk.Entry(frame,
                        width=20,
-                        show="•");
+                        show="★");
 passbox.pack(side=tk.TOP);
 
 validbtn = tk.Button(frame,
