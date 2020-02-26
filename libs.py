@@ -11,11 +11,27 @@ def tk():
         ("Linux", 2)
     ]
     
+    def showchoice():
+        choice = v.get();
+        print("Method: ")
+        if(choice == 1):
+            print("Windows");
+        elif(choice == 2):
+            print("Linux")
+
     def close():
         root.destroy();
-    
+
+    def linuxrun(script):
+        print("Running script in Linux mode.");
+        f= open( + ".txt","w+")
+
     def process():
-        script = pad.get();
+        script = pad.get("1.0",'end-1c');
+        print('Script:\n\n')
+        print(script + '\n\n');
+        showchoice();
+
 
 
     frame.pack();
