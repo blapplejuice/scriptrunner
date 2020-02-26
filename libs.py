@@ -23,8 +23,9 @@ def tk():
         root.destroy();
 
     def linuxrun(script):
+        name = "a";
         print("Running script in Linux mode.");
-        f= open( + ".txt","w+")
+        f= open(name + ".txt","w+");
 
     def process():
         script = pad.get("1.0",'end-1c');

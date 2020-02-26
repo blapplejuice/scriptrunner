@@ -6,7 +6,7 @@ autopassword = bool(1);
 
 
 
-password = '12345!"£$%';
+password = '';
 
 root = tk.Tk();
 root.title("unlocker");
@@ -14,7 +14,7 @@ frame = tk.Frame(root);
 frame.pack();
 
 def validate():
-    password = "hackerman";
+    password = "hackerman";  #password
     inputpassword = passbox.get();
     if(inputpassword == password):
         root.destroy();
