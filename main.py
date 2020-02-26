@@ -2,7 +2,7 @@ import tkinter as tk;
 import libs as scriptrunner;
 
 # put a 1 in the bool() to auto fill in password
-autopassword = bool(1);
+autopassword = bool(0);
 
 
 
